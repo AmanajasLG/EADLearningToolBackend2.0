@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "characters",
+  "info": {
+    "name": "Character"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "job": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "civilState": {
+      "type": "enumeration",
+      "enum": [
+        "single",
+        "married",
+        "divorced",
+        "widowed"
+      ]
+    },
+    "characterAssets": {
+      "via": "character",
+      "collection": "character-asset"
+    }
+  }
+}

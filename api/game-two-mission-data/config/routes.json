@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-two-mission-data",
+      "handler": "game-two-mission-data.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-two-mission-data/count",
+      "handler": "game-two-mission-data.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-two-mission-data/:id",
+      "handler": "game-two-mission-data.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-two-mission-data",
+      "handler": "game-two-mission-data.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-two-mission-data/:id",
+      "handler": "game-two-mission-data.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-two-mission-data/:id",
+      "handler": "game-two-mission-data.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_list_description_translates",
+  "info": {
+    "name": "DescriptionTranslate",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "language": {
+      "model": "language"
+    }
+  }
+}

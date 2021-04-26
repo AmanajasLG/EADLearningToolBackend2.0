@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_two_mission_data",
+  "info": {
+    "name": "GameTwoMissionData"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "locations": {
+      "collection": "location"
+    },
+    "questions": {
+      "collection": "question"
+    },
+    "gameTwoMissionCharacters": {
+      "via": "gameTwoMissionData",
+      "collection": "game-two-mission-character"
+    }
+  }
+}

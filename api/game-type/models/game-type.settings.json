@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_types",
+  "info": {
+    "name": "GameType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "GameTable": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.game-table"
+    },
+    "missions": {
+      "via": "gameType",
+      "collection": "mission"
+    }
+  }
+}

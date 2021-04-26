@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_two_mission_characters",
+  "info": {
+    "name": "GameTwoMissionCharacter"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "character": {
+      "model": "character"
+    },
+    "Answer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.answer"
+    },
+    "gameTwoMissionData": {
+      "model": "game-two-mission-data",
+      "via": "gameTwoMissionCharacters"
+    },
+    "target": {
+      "type": "boolean"
+    },
+    "endDialog": {
+      "type": "string"
+    },
+    "rightAccusationAnswer": {
+      "type": "string"
+    },
+    "wrongAccusationAnswer": {
+      "type": "string"
+    },
+    "rightEndAnswer": {
+      "type": "string"
+    },
+    "wrongEndAnswer": {
+      "type": "string"
+    },
+    "tip": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "character_assets",
+  "info": {
+    "name": "CharacterAsset",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "bodyPart": {
+      "type": "enumeration",
+      "enum": [
+        "fullbody",
+        "upperBody"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "init",
+        "rightAnswer",
+        "wrongAnswer",
+        "rightAccusation",
+        "wrongAccusation",
+        "win"
+      ]
+    },
+    "character": {
+      "model": "character",
+      "via": "characterAssets"
+    }
+  }
+}

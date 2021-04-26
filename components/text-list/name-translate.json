@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_list_name_translates",
+  "info": {
+    "name": "NameTranslate",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "language": {
+      "model": "language"
+    }
+  }
+}

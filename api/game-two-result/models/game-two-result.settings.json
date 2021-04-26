@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_two_results",
+  "info": {
+    "name": "GameTwoResult",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "win": {
+      "type": "boolean"
+    },
+    "score": {
+      "type": "integer"
+    },
+    "rightQuestionsCount": {
+      "type": "integer"
+    },
+    "spokenCharactersCount": {
+      "type": "integer"
+    },
+    "tipsCount": {
+      "type": "integer"
+    }
+  }
+}

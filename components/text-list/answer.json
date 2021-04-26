@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_list_answers",
+  "info": {
+    "name": "Answer",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "answer": {
+      "type": "string"
+    },
+    "question": {
+      "model": "question"
+    }
+  }
+}

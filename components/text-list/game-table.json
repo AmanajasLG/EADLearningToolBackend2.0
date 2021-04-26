@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_text_list_game_tables",
+  "info": {
+    "name": "GameTable",
+    "icon": "table"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "missionData",
+        "missionCharacter",
+        "playSession",
+        "results",
+        "userAnswer",
+        "tutorial",
+        "other"
+      ]
+    }
+  }
+}

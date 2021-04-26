@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-two-mission-characters",
+      "handler": "game-two-mission-character.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-two-mission-characters/count",
+      "handler": "game-two-mission-character.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-two-mission-characters/:id",
+      "handler": "game-two-mission-character.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-two-mission-characters",
+      "handler": "game-two-mission-character.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-two-mission-characters/:id",
+      "handler": "game-two-mission-character.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-two-mission-characters/:id",
+      "handler": "game-two-mission-character.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

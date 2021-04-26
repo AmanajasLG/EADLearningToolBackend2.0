@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "missions",
+  "info": {
+    "name": "Mission",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "gameType": {
+      "model": "game-type",
+      "via": "missions"
+    },
+    "NameTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.name-translate"
+    },
+    "DescriptionTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.description-translate"
+    },
+    "backgroundAudio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
