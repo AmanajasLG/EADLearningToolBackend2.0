@@ -35,8 +35,8 @@
       "type": "enumeration",
       "enum": [
         "init",
-        "rightAnswer",
-        "wrongAnswer",
+        "rightQuestion",
+        "wrongQuestion",
         "rightAccusation",
         "wrongAccusation",
         "win"

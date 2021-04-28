@@ -21,12 +21,13 @@
     "questions": {
       "collection": "question"
     },
-    "gameTwoMissionCharacters": {
+    "missionCharacters": {
       "collection": "game-two-mission-character",
-      "via": "gameTwoMissionData"
+      "via": "missionData"
     },
-    "gameTwoTutorial": {
-      "model": "game-two-tutorial"
+    "tutorial": {
+      "model": "game-two-tutorial",
+      "via": "missionData"
     }
   }
 }

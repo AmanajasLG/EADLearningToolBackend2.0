@@ -22,6 +22,10 @@
     },
     "location": {
       "model": "location"
+    },
+    "missionData": {
+      "via": "tutorial",
+      "model": "game-two-mission-data"
     }
   }
 }

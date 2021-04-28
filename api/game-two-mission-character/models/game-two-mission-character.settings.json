@@ -19,10 +19,6 @@
       "repeatable": true,
       "component": "text-list.answer"
     },
-    "gameTwoMissionData": {
-      "via": "gameTwoMissionCharacters",
-      "model": "game-two-mission-data"
-    },
     "target": {
       "type": "boolean"
     },
@@ -43,6 +39,10 @@
     },
     "tip": {
       "type": "string"
+    },
+    "missionData": {
+      "via": "missionCharacters",
+      "model": "game-two-mission-data"
     }
   }
 }
