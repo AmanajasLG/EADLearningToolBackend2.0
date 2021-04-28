@@ -21,8 +21,8 @@
       "component": "text-list.game-table"
     },
     "missions": {
-      "collection": "mission",
-      "via": "gameType"
+      "via": "gameType",
+      "collection": "mission"
     }
   }
 }

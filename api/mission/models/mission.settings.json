@@ -19,15 +19,15 @@
       "type": "text"
     },
     "gameType": {
-      "via": "missions",
-      "model": "game-type"
+      "model": "game-type",
+      "via": "missions"
     },
-    "NameTranslate": {
+    "nameTranslate": {
       "type": "component",
       "repeatable": true,
       "component": "text-list.name-translate"
     },
-    "DescriptionTranslate": {
+    "descriptionTranslate": {
       "type": "component",
       "repeatable": true,
       "component": "text-list.description-translate"
