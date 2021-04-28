@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_two_play_sessions",
+  "info": {
+    "name": "GameTwoPlaySession"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "mission": {
+      "model": "mission"
+    }
+  }
+}

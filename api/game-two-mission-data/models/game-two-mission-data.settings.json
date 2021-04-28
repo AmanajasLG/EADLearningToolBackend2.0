@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "game_two_mission_data",
   "info": {
-    "name": "GameTwoMissionData"
+    "name": "GameTwoMissionData",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,8 +22,11 @@
       "collection": "question"
     },
     "gameTwoMissionCharacters": {
-      "via": "gameTwoMissionData",
-      "collection": "game-two-mission-character"
+      "collection": "game-two-mission-character",
+      "via": "gameTwoMissionData"
+    },
+    "gameTwoTutorial": {
+      "model": "game-two-tutorial"
     }
   }
 }

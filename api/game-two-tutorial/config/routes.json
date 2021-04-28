@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-two-tutorials",
+      "handler": "game-two-tutorial.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-two-tutorials/count",
+      "handler": "game-two-tutorial.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-two-tutorials/:id",
+      "handler": "game-two-tutorial.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-two-tutorials",
+      "handler": "game-two-tutorial.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-two-tutorials/:id",
+      "handler": "game-two-tutorial.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-two-tutorials/:id",
+      "handler": "game-two-tutorial.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

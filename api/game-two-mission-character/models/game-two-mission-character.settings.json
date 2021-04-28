@@ -20,8 +20,8 @@
       "component": "text-list.answer"
     },
     "gameTwoMissionData": {
-      "model": "game-two-mission-data",
-      "via": "gameTwoMissionCharacters"
+      "via": "gameTwoMissionCharacters",
+      "model": "game-two-mission-data"
     },
     "target": {
       "type": "boolean"

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "game_types",
+  "collectionName": "game_two_tutorials",
   "info": {
-    "name": "GameType",
+    "name": "GameTwoTutorial",
     "description": ""
   },
   "options": {
@@ -12,17 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "description": {
-      "type": "text"
+    "character": {
+      "model": "character"
     },
-    "gameTables": {
+    "answers": {
       "type": "component",
       "repeatable": true,
-      "component": "text-list.game-table"
+      "component": "text-list.answer"
     },
-    "missions": {
-      "collection": "mission",
-      "via": "gameType"
+    "location": {
+      "model": "location"
     }
   }
 }
