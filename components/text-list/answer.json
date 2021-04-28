@@ -2,7 +2,8 @@
   "collectionName": "components_text_list_answers",
   "info": {
     "name": "Answer",
-    "icon": "question"
+    "icon": "question",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,9 @@
     },
     "question": {
       "model": "question"
+    },
+    "close": {
+      "type": "boolean"
     }
   }
 }
