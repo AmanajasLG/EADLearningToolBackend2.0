@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "game_two_mission_characters",
   "info": {
-    "name": "GameTwoMissionCharacter"
+    "name": "GameTwoMissionCharacter",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,7 +15,7 @@
     "character": {
       "model": "character"
     },
-    "Answer": {
+    "answers": {
       "type": "component",
       "repeatable": true,
       "component": "text-list.answer"
@@ -41,8 +42,8 @@
       "type": "string"
     },
     "missionData": {
-      "via": "missionCharacters",
-      "model": "game-two-mission-data"
+      "model": "game-two-mission-data",
+      "via": "missionCharacters"
     }
   }
 }

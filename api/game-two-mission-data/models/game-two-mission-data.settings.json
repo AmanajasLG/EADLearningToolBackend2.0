@@ -22,8 +22,8 @@
       "collection": "question"
     },
     "missionCharacters": {
-      "collection": "game-two-mission-character",
-      "via": "missionData"
+      "via": "missionData",
+      "collection": "game-two-mission-character"
     },
     "tutorial": {
       "model": "game-two-tutorial",
