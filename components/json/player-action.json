@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_json_player_actions",
+  "info": {
+    "name": "PlayerAction",
+    "icon": "mouse-pointer"
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "json"
+    }
+  }
+}

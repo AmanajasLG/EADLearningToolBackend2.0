@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "play_sessions",
+  "info": {
+    "name": "PlaySession"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "mission": {
+      "model": "mission"
+    },
+    "playerAction": {
+      "type": "component",
+      "repeatable": true,
+      "component": "json.player-action"
+    },
+    "ended": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
