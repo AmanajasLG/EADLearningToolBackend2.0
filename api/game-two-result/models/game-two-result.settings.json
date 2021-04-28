@@ -19,13 +19,13 @@
       "plugin": "users-permissions",
       "model": "user"
     },
-    "win": {
+    "won": {
       "type": "boolean"
     },
     "score": {
       "type": "integer"
     },
-    "rightQuestionsCount": {
+    "validQuestionsCount": {
       "type": "integer"
     },
     "spokenCharactersCount": {
