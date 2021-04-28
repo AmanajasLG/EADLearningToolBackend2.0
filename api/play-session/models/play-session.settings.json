@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "play_sessions",
   "info": {
-    "name": "PlaySession"
+    "name": "PlaySession",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -18,7 +19,7 @@
     "mission": {
       "model": "mission"
     },
-    "playerAction": {
+    "playerActions": {
       "type": "component",
       "repeatable": true,
       "component": "json.player-action"
