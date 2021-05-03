@@ -23,6 +23,9 @@
     "missions": {
       "via": "gameType",
       "collection": "mission"
+    },
+    "game": {
+      "type": "integer"
     }
   }
 }

@@ -19,8 +19,8 @@
       "type": "text"
     },
     "gameType": {
-      "model": "game-type",
-      "via": "missions"
+      "via": "missions",
+      "model": "game-type"
     },
     "nameTranslate": {
       "type": "component",
