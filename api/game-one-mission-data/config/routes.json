@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-one-mission-data",
+      "handler": "game-one-mission-data.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-one-mission-data/count",
+      "handler": "game-one-mission-data.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-one-mission-data/:id",
+      "handler": "game-one-mission-data.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-one-mission-data",
+      "handler": "game-one-mission-data.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-one-mission-data/:id",
+      "handler": "game-one-mission-data.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-one-mission-data/:id",
+      "handler": "game-one-mission-data.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

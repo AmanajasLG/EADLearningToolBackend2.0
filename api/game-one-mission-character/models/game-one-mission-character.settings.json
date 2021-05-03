@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_one_mission_characters",
+  "info": {
+    "name": "GameOneMissionCharacter",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "character": {
+      "model": "character"
+    },
+    "missionData": {
+      "via": "missionCharacters",
+      "model": "game-one-mission-data"
+    },
+    "showJob": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCountry": {
+      "type": "boolean",
+      "default": true
+    },
+    "showName": {
+      "type": "boolean",
+      "default": true
+    },
+    "answers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.answer"
+    },
+    "endDialog": {
+      "type": "string"
+    }
+  }
+}

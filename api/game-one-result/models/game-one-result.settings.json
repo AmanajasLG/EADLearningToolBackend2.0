@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_one_results",
+  "info": {
+    "name": "GameOneResult"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "mission": {
+      "model": "mission"
+    },
+    "won": {
+      "type": "boolean"
+    },
+    "score": {
+      "type": "integer"
+    }
+  }
+}

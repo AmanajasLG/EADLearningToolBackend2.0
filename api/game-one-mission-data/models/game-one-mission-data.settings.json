@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_one_mission_data",
+  "info": {
+    "name": "GameOneMissionData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "missionCharacters": {
+      "via": "missionData",
+      "collection": "game-one-mission-character"
+    },
+    "locations": {
+      "collection": "location"
+    },
+    "questions": {
+      "collection": "question"
+    }
+  }
+}
