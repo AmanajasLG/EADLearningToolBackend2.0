@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_one_locations",
+  "info": {
+    "name": "GameOneLocation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionCharacters": {
+      "collection": "game-one-mission-character",
+      "via": "location"
+    },
+    "maxQuestions": {
+      "type": "integer"
+    },
+    "location": {
+      "model": "location"
+    },
+    "missionData": {
+      "via": "locations",
+      "model": "game-one-mission-data"
+    }
+  }
+}

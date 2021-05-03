@@ -15,10 +15,6 @@
     "character": {
       "model": "character"
     },
-    "missionData": {
-      "via": "missionCharacters",
-      "model": "game-one-mission-data"
-    },
     "showJob": {
       "type": "boolean",
       "default": true
@@ -38,6 +34,10 @@
     },
     "endDialog": {
       "type": "string"
+    },
+    "location": {
+      "via": "missionCharacters",
+      "model": "game-one-location"
     }
   }
 }

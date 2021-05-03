@@ -15,15 +15,12 @@
     "mission": {
       "model": "mission"
     },
-    "missionCharacters": {
-      "via": "missionData",
-      "collection": "game-one-mission-character"
-    },
-    "locations": {
-      "collection": "location"
-    },
     "questions": {
       "collection": "question"
+    },
+    "locations": {
+      "collection": "game-one-location",
+      "via": "missionData"
     }
   }
 }

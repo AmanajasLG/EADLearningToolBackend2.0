@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-one-locations",
+      "handler": "game-one-location.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-one-locations/count",
+      "handler": "game-one-location.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-one-locations/:id",
+      "handler": "game-one-location.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-one-locations",
+      "handler": "game-one-location.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-one-locations/:id",
+      "handler": "game-one-location.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-one-locations/:id",
+      "handler": "game-one-location.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
