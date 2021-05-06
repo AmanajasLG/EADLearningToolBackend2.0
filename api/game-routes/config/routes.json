@@ -1,0 +1,44 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game/missions",
+      "handler": "game-routes.getMissions",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game/missions/:id",
+      "handler": "game-routes.getMission",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game/results",
+      "handler": "game-routes.getResults",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game/results/count",
+      "handler": "game-routes.getResultsCount",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game/results",
+      "handler": "game-routes.createResult",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

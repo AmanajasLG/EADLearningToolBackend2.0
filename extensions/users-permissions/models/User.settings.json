@@ -67,6 +67,13 @@
     },
     "language": {
       "model": "language"
+    },
+    "defaultVolume": {
+      "type": "integer",
+      "default": 10
+    },
+    "defaultColor": {
+      "type": "string"
     }
   }
 }

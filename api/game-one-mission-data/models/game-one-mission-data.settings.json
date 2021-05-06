@@ -21,6 +21,24 @@
     "locations": {
       "collection": "game-one-location",
       "via": "missionData"
+    },
+    "nextRoomTextRight": {
+      "type": "string",
+      "default": "Parece que está tudo certo por aqui. Deseja continuar?"
+    },
+    "nextRoomTextWrong": {
+      "type": "string",
+      "default": "pessoa(s) estão com dados errados. Tem certeza que deseja continuar? Você pode não se recurperar dessa crise de meia idade!"
+    },
+    "nextRoomTextRightTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.translation"
+    },
+    "nextRoomTextWrongTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.translation"
     }
   }
 }
