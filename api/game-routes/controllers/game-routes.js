@@ -61,7 +61,7 @@ module.exports = {
             ...mission,
             missionData: await strapi.query('game-one-mission-data').findOne({'mission': mission.id}, [
               { path: 'locations', populate: ['location', { path: 'missionCharacters', populate: [{ path: 'character', populate: ['characterAssets'] }, 'answers']} ]},
-              'questions',
+              'questions', 'feedbacks'
             ])
           }]
         }

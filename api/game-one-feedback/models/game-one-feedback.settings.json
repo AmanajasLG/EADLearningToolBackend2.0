@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_one_feedbacks",
+  "info": {
+    "name": "GameOneFeedback",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "minScore": {
+      "type": "integer"
+    },
+    "maxScore": {
+      "type": "integer"
+    },
+    "mobileBackground": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "topAsset": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "missionData": {
+      "model": "game-one-mission-data",
+      "via": "feedbacks"
+    },
+    "textTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.translation"
+    }
+  }
+}

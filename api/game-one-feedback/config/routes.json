@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-one-feedbacks",
+      "handler": "game-one-feedback.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-one-feedbacks/count",
+      "handler": "game-one-feedback.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-one-feedbacks/:id",
+      "handler": "game-one-feedback.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-one-feedbacks",
+      "handler": "game-one-feedback.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-one-feedbacks/:id",
+      "handler": "game-one-feedback.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-one-feedbacks/:id",
+      "handler": "game-one-feedback.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
