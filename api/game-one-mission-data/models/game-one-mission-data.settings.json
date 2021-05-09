@@ -43,6 +43,9 @@
     "feedbacks": {
       "via": "missionData",
       "collection": "game-one-feedback"
+    },
+    "metrics": {
+      "collection": "game-metrics"
     }
   }
 }

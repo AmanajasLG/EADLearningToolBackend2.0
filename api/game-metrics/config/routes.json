@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-metrics",
+      "handler": "game-metrics.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-metrics/count",
+      "handler": "game-metrics.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-metrics/:id",
+      "handler": "game-metrics.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-metrics",
+      "handler": "game-metrics.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-metrics/:id",
+      "handler": "game-metrics.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-metrics/:id",
+      "handler": "game-metrics.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

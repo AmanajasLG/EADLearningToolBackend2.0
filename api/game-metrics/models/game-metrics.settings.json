@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_metrics",
+  "info": {
+    "name": "GameMetric",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "nameTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.translation"
+    }
+  }
+}

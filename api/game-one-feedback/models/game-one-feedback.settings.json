@@ -46,8 +46,8 @@
       "pluginOptions": {}
     },
     "missionData": {
-      "model": "game-one-mission-data",
-      "via": "feedbacks"
+      "via": "feedbacks",
+      "model": "game-one-mission-data"
     },
     "textTranslate": {
       "type": "component",
