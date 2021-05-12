@@ -203,7 +203,7 @@ module.exports = {
             .query("game-two-result")
             .count(ctx.query, []),
         };
-      case 2:
+      case 3:
         return {
           resultsCount: await strapi
             .query("game-three-result")
