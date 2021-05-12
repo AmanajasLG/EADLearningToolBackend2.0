@@ -43,6 +43,18 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "initIcon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
