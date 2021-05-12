@@ -22,6 +22,19 @@
     },
     "difficulty": {
       "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "nameTranslation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.translation"
+    },
+    "descriptionTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.translation"
     }
   }
 }

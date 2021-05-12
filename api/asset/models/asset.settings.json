@@ -31,7 +31,8 @@
       "type": "enumeration",
       "enum": [
         "object",
-        "style"
+        "style",
+        "food"
       ]
     }
   }

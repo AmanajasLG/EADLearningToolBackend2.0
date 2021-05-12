@@ -20,14 +20,17 @@
         "bebida",
         "fruta",
         "legume",
+        "tempero",
+        "verdura",
         "outros"
       ]
     },
     "measure": {
       "type": "enumeration",
       "enum": [
-        "quilo",
-        "unidade"
+        "grama",
+        "unidade",
+        "ml"
       ]
     },
     "unityValue": {
