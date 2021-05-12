@@ -145,10 +145,7 @@ module.exports = {
                 .query("game-three-mission-data")
                 .findOne({ mission: mission.id }, [
                   "money",
-                  {
-                    path: "recipes",
-                    populate: [{ path: "ingredients", populate: ["asset"] }],
-                  },
+                  "recipes",
                   {
                     path: "tutorial",
                     populate: [
