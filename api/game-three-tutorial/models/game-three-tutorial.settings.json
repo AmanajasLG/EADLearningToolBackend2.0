@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_three_tutorials",
+  "info": {
+    "name": "GameThreeTutorial",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "model": "game-three-mission-data",
+      "via": "tutorial"
+    },
+    "character": {
+      "model": "character"
+    }
+  }
+}

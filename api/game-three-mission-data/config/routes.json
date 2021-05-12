@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-three-mission-data",
+      "handler": "game-three-mission-data.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-three-mission-data/count",
+      "handler": "game-three-mission-data.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-three-mission-data/:id",
+      "handler": "game-three-mission-data.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-three-mission-data",
+      "handler": "game-three-mission-data.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-three-mission-data/:id",
+      "handler": "game-three-mission-data.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-three-mission-data/:id",
+      "handler": "game-three-mission-data.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_text_list_ingredient_results",
+  "info": {
+    "name": "IngredientResult",
+    "icon": "carrot"
+  },
+  "options": {},
+  "attributes": {
+    "asset": {
+      "model": "asset"
+    },
+    "rightQuantity": {
+      "type": "integer"
+    },
+    "userQuantity": {
+      "type": "integer"
+    }
+  }
+}

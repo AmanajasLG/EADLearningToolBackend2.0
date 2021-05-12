@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_three_results",
+  "info": {
+    "name": "GameThreeResult",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "secondsTaken": {
+      "type": "integer"
+    },
+    "win": {
+      "type": "boolean",
+      "default": false
+    },
+    "recipe": {
+      "model": "recipe"
+    },
+    "rightPayment": {
+      "type": "boolean"
+    },
+    "ingredientResult": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.ingredient-result"
+    }
+  }
+}

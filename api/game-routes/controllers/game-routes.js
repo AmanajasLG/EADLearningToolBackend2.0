@@ -136,6 +136,29 @@ module.exports = {
             },
           ],
         };
+      case 3:
+        return {
+          missions: [
+            {
+              ...mission,
+              missionData: await strapi
+                .query("game-three-mission-data")
+                .findOne({ mission: mission.id }, [
+                  "money",
+                  {
+                    path: "recipes",
+                    populate: [{ path: "ingredients", populate: ["asset"] }],
+                  },
+                  {
+                    path: "tutorial",
+                    populate: [
+                      { path: "character", populate: ["characterAssets"] },
+                    ],
+                  },
+                ]),
+            },
+          ],
+        };
       default:
     }
   },
@@ -155,6 +178,10 @@ module.exports = {
       case 2:
         return {
           results: await strapi.query("game-two-result").find(ctx.query, []),
+        };
+      case 3:
+        return {
+          results: await strapi.query("game-three-result").find(ctx.query, []),
         };
       default:
     }
@@ -179,6 +206,12 @@ module.exports = {
             .query("game-two-result")
             .count(ctx.query, []),
         };
+      case 2:
+        return {
+          resultsCount: await strapi
+            .query("game-three-result")
+            .count(ctx.query, []),
+        };
       default:
     }
   },
@@ -198,6 +231,10 @@ module.exports = {
       case 2:
         return {
           results: [await strapi.query("game-two-result").create(ctx.query)],
+        };
+      case 3:
+        return {
+          results: [await strapi.query("game-three-result").create(ctx.query)],
         };
       default:
     }

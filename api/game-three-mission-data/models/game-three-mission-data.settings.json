@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_three_mission_data",
+  "info": {
+    "name": "GameThreeMissionData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seconds": {
+      "type": "integer"
+    },
+    "aisles": {
+      "type": "integer"
+    },
+    "recipes": {
+      "collection": "recipe"
+    },
+    "money": {
+      "collection": "money"
+    },
+    "separation": {
+      "type": "enumeration",
+      "enum": [
+        "ingredientType",
+        "aislesCount"
+      ]
+    },
+    "mission": {
+      "model": "mission"
+    },
+    "tutorial": {
+      "via": "missionData",
+      "model": "game-three-tutorial"
+    }
+  }
+}
