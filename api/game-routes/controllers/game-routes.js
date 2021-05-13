@@ -162,7 +162,6 @@ module.exports = {
 
   getResults: async (ctx, next) => {
     let p = ["gameType"];
-    console.log(ctx.query);
     const mission = await strapi
       .query("mission")
       .findOne({ id: ctx.query.mission }, p);
