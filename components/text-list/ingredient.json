@@ -28,7 +28,7 @@
     "measure": {
       "type": "enumeration",
       "enum": [
-        "grama",
+        "g",
         "unidade",
         "ml"
       ]
