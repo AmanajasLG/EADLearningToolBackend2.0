@@ -39,7 +39,10 @@
         "wrongQuestion",
         "rightAccusation",
         "wrongAccusation",
-        "win"
+        "win",
+        "wrongPayment",
+        "cashier",
+        "default"
       ]
     },
     "character": {

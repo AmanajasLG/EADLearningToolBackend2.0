@@ -13,8 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "missionData": {
-      "model": "game-three-mission-data",
-      "via": "tutorial"
+      "via": "tutorial",
+      "model": "game-three-mission-data"
     },
     "character": {
       "model": "character"
