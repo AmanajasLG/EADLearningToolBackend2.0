@@ -146,12 +146,7 @@ module.exports = {
                 .findOne({ mission: mission.id }, [
                   "money",
                   "recipes",
-                  {
-                    path: "tutorial",
-                    populate: [
-                      { path: "character", populate: ["characterAssets"] },
-                    ],
-                  },
+                  { path: "character", populate: ["characterAssets"] },
                 ]),
             },
           ],
