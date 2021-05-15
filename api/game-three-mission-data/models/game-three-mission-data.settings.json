@@ -34,10 +34,6 @@
     "mission": {
       "model": "mission"
     },
-    "tutorial": {
-      "via": "missionData",
-      "model": "game-three-tutorial"
-    },
     "character": {
       "model": "character"
     }
