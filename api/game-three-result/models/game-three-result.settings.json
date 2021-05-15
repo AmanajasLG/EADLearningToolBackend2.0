@@ -22,7 +22,7 @@
     "secondsTaken": {
       "type": "integer"
     },
-    "win": {
+    "won": {
       "type": "boolean",
       "default": false
     },
@@ -32,7 +32,7 @@
     "rightPayment": {
       "type": "boolean"
     },
-    "ingredientResult": {
+    "wrongIngredients": {
       "type": "component",
       "repeatable": true,
       "component": "text-list.ingredient-result"
