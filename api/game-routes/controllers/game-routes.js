@@ -217,15 +217,17 @@ module.exports = {
     switch (mission.gameType.game) {
       case 1:
         return {
-          results: [await strapi.query("game-one-result").create(ctx.query)],
+          results: await strapi.query("game-one-result").create(ctx.query),
         };
       case 2:
         return {
-          results: [await strapi.query("game-two-result").create(ctx.query)],
+          results: await strapi.query("game-two-result").create(ctx.query),
         };
       case 3:
+        if (ctx.query.wrongIngredients)
+          ctx.query.wrongIngredients = JSON.parse(ctx.query.wrongIngredients);
         return {
-          results: [await strapi.query("game-three-result").create(ctx.query)],
+          results: await strapi.query("game-three-result").create(ctx.query),
         };
       default:
     }
