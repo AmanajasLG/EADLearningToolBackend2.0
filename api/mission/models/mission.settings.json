@@ -55,6 +55,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "draft": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

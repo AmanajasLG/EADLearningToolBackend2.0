@@ -11,7 +11,15 @@ module.exports = {
 
   getMissions: async (ctx, next) => {
     let p = ["gameType"];
-    return { missions: await strapi.query("mission").find(ctx.query, p) };
+    console.log(ctx.query);
+    if (ctx.state.user.role.name === "Professor")
+      return { missions: await strapi.query("mission").find(ctx.query, p) };
+    else
+      return {
+        missions: await strapi
+          .query("mission")
+          .find({ ...ctx.query, draft: false }, p),
+      };
 
     const missions = await strapi.query("mission").find(ctx.query, p);
     let data = [];
