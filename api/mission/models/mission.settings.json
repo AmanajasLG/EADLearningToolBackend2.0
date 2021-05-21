@@ -59,6 +59,9 @@
     "draft": {
       "type": "boolean",
       "default": true
+    },
+    "trackPlayerInput": {
+      "type": "boolean"
     }
   }
 }
