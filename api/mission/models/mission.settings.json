@@ -61,7 +61,8 @@
       "default": true
     },
     "trackPlayerInput": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }
 }
