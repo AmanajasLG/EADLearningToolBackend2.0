@@ -24,10 +24,6 @@
     "recipes": {
       "via": "missionData",
       "collection": "game-four-recipe"
-    },
-    "tablewares": {
-      "via": "missionData",
-      "collection": "game-four-tableware"
     }
   }
 }

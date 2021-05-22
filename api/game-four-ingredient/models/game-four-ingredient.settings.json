@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "game_four_ingredients",
   "info": {
-    "name": "GameFourIngredient"
+    "name": "GameFourIngredient",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,8 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "recipe": {
-      "model": "game-four-recipe",
-      "via": "ingredients"
+      "via": "ingredients",
+      "model": "game-four-recipe"
     },
     "shuffleName": {
       "type": "string"
@@ -21,8 +22,11 @@
     "asset": {
       "model": "asset"
     },
+    "order": {
+      "type": "integer"
+    },
     "description": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }

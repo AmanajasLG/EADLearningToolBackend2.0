@@ -18,9 +18,9 @@
     "correct": {
       "type": "boolean"
     },
-    "missionData": {
-      "model": "game-four-mission-data",
-      "via": "tablewares"
+    "recipe": {
+      "via": "tablewares",
+      "model": "game-four-recipe"
     }
   }
 }
