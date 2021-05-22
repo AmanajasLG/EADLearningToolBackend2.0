@@ -170,10 +170,12 @@ module.exports = {
               missionData: await strapi
                 .query("game-four-mission-data")
                 .findOne({ mission: mission.id }, [
-                  { path: "tablewares", populate: "asset" },
                   {
                     path: "recipes",
-                    populate: [{ path: "ingredients", populate: "asset" }],
+                    populate: [
+                      { path: "ingredients", populate: "asset" },
+                      { path: "tablewares", populate: "asset" },
+                    ],
                   },
                   { path: "character", populate: ["characterAssets"] },
                 ]),
