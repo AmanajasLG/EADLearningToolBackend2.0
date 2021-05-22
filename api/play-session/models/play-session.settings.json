@@ -19,14 +19,12 @@
     "mission": {
       "model": "mission"
     },
-    "playerActions": {
-      "type": "component",
-      "repeatable": true,
-      "component": "json.player-action"
-    },
     "ended": {
       "type": "boolean",
       "default": false
+    },
+    "data": {
+      "type": "json"
     }
   }
 }
