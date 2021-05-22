@@ -24,6 +24,9 @@
     },
     "secondsTaken": {
       "type": "integer"
+    },
+    "recipe": {
+      "model": "game-four-recipe"
     }
   }
 }
