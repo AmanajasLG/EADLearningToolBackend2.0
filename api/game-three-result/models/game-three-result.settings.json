@@ -26,9 +26,6 @@
       "type": "boolean",
       "default": false
     },
-    "recipe": {
-      "model": "recipe"
-    },
     "rightPayment": {
       "type": "boolean"
     },

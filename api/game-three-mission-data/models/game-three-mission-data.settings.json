@@ -18,9 +18,6 @@
     "aisles": {
       "type": "integer"
     },
-    "recipes": {
-      "collection": "recipe"
-    },
     "money": {
       "collection": "money"
     },
@@ -36,6 +33,10 @@
     },
     "character": {
       "model": "character"
+    },
+    "recipes": {
+      "via": "missionData",
+      "collection": "game-three-recipe"
     }
   }
 }

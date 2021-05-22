@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_four_results",
+  "info": {
+    "name": "GameFourResult",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "mission": {
+      "model": "mission"
+    },
+    "won": {
+      "type": "boolean"
+    },
+    "secondsTaken": {
+      "type": "integer"
+    }
+  }
+}

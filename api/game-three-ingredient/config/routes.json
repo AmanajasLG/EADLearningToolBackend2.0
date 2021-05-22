@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-three-ingredients",
+      "handler": "game-three-ingredient.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-three-ingredients/count",
+      "handler": "game-three-ingredient.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-three-ingredients/:id",
+      "handler": "game-three-ingredient.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-three-ingredients",
+      "handler": "game-three-ingredient.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-three-ingredients/:id",
+      "handler": "game-three-ingredient.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-three-ingredients/:id",
+      "handler": "game-three-ingredient.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

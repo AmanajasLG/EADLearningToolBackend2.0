@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/recipes",
-      "handler": "recipe.find",
+      "path": "/game-three-recipes",
+      "handler": "game-three-recipe.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/recipes/count",
-      "handler": "recipe.count",
+      "path": "/game-three-recipes/count",
+      "handler": "game-three-recipe.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/recipes/:id",
-      "handler": "recipe.findOne",
+      "path": "/game-three-recipes/:id",
+      "handler": "game-three-recipe.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/recipes",
-      "handler": "recipe.create",
+      "path": "/game-three-recipes",
+      "handler": "game-three-recipe.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/recipes/:id",
-      "handler": "recipe.update",
+      "path": "/game-three-recipes/:id",
+      "handler": "game-three-recipe.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/recipes/:id",
-      "handler": "recipe.delete",
+      "path": "/game-three-recipes/:id",
+      "handler": "game-three-recipe.delete",
       "config": {
         "policies": []
       }

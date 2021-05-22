@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_four_tablewares",
+  "info": {
+    "name": "GameFourTableware",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "asset": {
+      "model": "asset"
+    },
+    "correct": {
+      "type": "boolean"
+    },
+    "missionData": {
+      "model": "game-four-mission-data",
+      "via": "tablewares"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_three_ingredients",
+  "info": {
+    "name": "GameThreeIngredient"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "recipe": {
+      "via": "ingredients",
+      "model": "game-three-recipe"
+    },
+    "asset": {
+      "model": "asset"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "frio",
+        "bebida",
+        "fruta",
+        "legume",
+        "tempero",
+        "verdura",
+        "outros"
+      ]
+    },
+    "measure": {
+      "type": "enumeration",
+      "enum": [
+        "g",
+        "unidade",
+        "ml"
+      ]
+    },
+    "unityValue": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "text"
+    },
+    "shelfImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

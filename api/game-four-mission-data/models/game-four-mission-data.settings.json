@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_four_mission_data",
+  "info": {
+    "name": "GameFourMissionData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "seconds": {
+      "type": "integer"
+    },
+    "character": {
+      "model": "character"
+    },
+    "recipes": {
+      "via": "missionData",
+      "collection": "game-four-recipe"
+    },
+    "tablewares": {
+      "via": "missionData",
+      "collection": "game-four-tableware"
+    }
+  }
+}

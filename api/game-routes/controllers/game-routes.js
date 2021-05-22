@@ -153,7 +153,28 @@ module.exports = {
                 .query("game-three-mission-data")
                 .findOne({ mission: mission.id }, [
                   "money",
-                  "recipes",
+                  {
+                    path: "recipes",
+                    populate: [{ path: "ingredients", populate: "asset" }],
+                  },
+                  { path: "character", populate: ["characterAssets"] },
+                ]),
+            },
+          ],
+        };
+      case 4:
+        return {
+          missions: [
+            {
+              ...mission,
+              missionData: await strapi
+                .query("game-four-mission-data")
+                .findOne({ mission: mission.id }, [
+                  { path: "tablewares", populate: "asset" },
+                  {
+                    path: "recipes",
+                    populate: [{ path: "ingredients", populate: "asset" }],
+                  },
                   { path: "character", populate: ["characterAssets"] },
                 ]),
             },
@@ -181,6 +202,10 @@ module.exports = {
       case 3:
         return {
           results: await strapi.query("game-three-result").find(ctx.query, []),
+        };
+      case 4:
+        return {
+          results: await strapi.query("game-four-result").find(ctx.query, []),
         };
       default:
     }
@@ -211,6 +236,12 @@ module.exports = {
             .query("game-three-result")
             .count(ctx.query, []),
         };
+      case 4:
+        return {
+          resultsCount: await strapi
+            .query("game-four-result")
+            .count(ctx.query, []),
+        };
       default:
     }
   },
@@ -236,6 +267,12 @@ module.exports = {
           ctx.query.wrongIngredients = JSON.parse(ctx.query.wrongIngredients);
         return {
           results: await strapi.query("game-three-result").create(ctx.query),
+        };
+      case 4:
+        // if (ctx.query.wrongIngredients)
+        //   ctx.query.wrongIngredients = JSON.parse(ctx.query.wrongIngredients);
+        return {
+          results: await strapi.query("game-four-result").create(ctx.query),
         };
       default:
     }

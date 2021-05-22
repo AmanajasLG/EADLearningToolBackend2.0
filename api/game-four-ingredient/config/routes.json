@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-four-ingredients",
+      "handler": "game-four-ingredient.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-four-ingredients/count",
+      "handler": "game-four-ingredient.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-four-ingredients/:id",
+      "handler": "game-four-ingredient.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-four-ingredients",
+      "handler": "game-four-ingredient.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-four-ingredients/:id",
+      "handler": "game-four-ingredient.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-four-ingredients/:id",
+      "handler": "game-four-ingredient.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_four_recipes",
+  "info": {
+    "name": "GameFourRecipe"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "recipes",
+      "model": "game-four-mission-data"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "nameTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.translation"
+    },
+    "descriptionTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.translation"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ingredients": {
+      "via": "recipe",
+      "collection": "game-four-ingredient"
+    }
+  }
+}

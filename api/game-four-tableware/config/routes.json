@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-four-tablewares",
+      "handler": "game-four-tableware.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-four-tablewares/count",
+      "handler": "game-four-tableware.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-four-tablewares/:id",
+      "handler": "game-four-tableware.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-four-tablewares",
+      "handler": "game-four-tableware.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-four-tablewares/:id",
+      "handler": "game-four-tableware.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-four-tablewares/:id",
+      "handler": "game-four-tableware.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

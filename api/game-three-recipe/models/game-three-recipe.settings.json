@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "recipes",
+  "collectionName": "game_three_recipes",
   "info": {
-    "name": "Recipe",
+    "name": "GameThreeRecipe",
     "description": ""
   },
   "options": {
@@ -12,16 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "missionData": {
+      "model": "game-three-mission-data",
+      "via": "recipes"
     },
     "ingredients": {
-      "type": "component",
-      "repeatable": true,
-      "component": "text-list.ingredient"
+      "via": "recipe",
+      "collection": "game-three-ingredient"
     },
-    "difficulty": {
-      "type": "integer"
+    "name": {
+      "type": "string"
     },
     "description": {
       "type": "text"
