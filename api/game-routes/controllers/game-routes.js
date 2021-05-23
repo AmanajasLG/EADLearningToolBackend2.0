@@ -271,8 +271,22 @@ module.exports = {
           results: await strapi.query("game-three-result").create(ctx.query),
         };
       case 4:
-        // if (ctx.query.wrongIngredients)
-        //   ctx.query.wrongIngredients = JSON.parse(ctx.query.wrongIngredients);
+        if (ctx.query.wrongIngredientSelected)
+          ctx.query.wrongIngredientSelected = JSON.parse(
+            ctx.query.wrongIngredients
+          );
+        if (ctx.query.wrongIngredientNameOrder)
+          ctx.query.wrongIngredientNameOrder = JSON.parse(
+            ctx.query.wrongIngredientNameOrder
+          );
+        if (ctx.query.wrongTablewarePairSelected)
+          ctx.query.wrongTablewarePairSelected = JSON.parse(
+            ctx.query.wrongTablewarePairSelected
+          );
+        if (ctx.query.wrongTablewareSelected)
+          ctx.query.wrongTablewareSelected = JSON.parse(
+            ctx.query.wrongTablewareSelected
+          );
         return {
           results: await strapi.query("game-four-result").create(ctx.query),
         };
