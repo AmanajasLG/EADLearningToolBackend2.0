@@ -273,7 +273,7 @@ module.exports = {
       case 4:
         if (ctx.query.wrongIngredientSelected)
           ctx.query.wrongIngredientSelected = JSON.parse(
-            ctx.query.wrongIngredients
+            ctx.query.wrongIngredientSelected
           );
         if (ctx.query.wrongIngredientNameOrder)
           ctx.query.wrongIngredientNameOrder = JSON.parse(
