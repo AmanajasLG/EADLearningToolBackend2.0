@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_list_game_four_wrong_tableware_pair_selecteds",
+  "info": {
+    "name": "GameFourWrongTablewarePairSelected",
+    "icon": "band-aid"
+  },
+  "options": {},
+  "attributes": {
+    "imageSelected": {
+      "type": "string"
+    },
+    "nameSelected": {
+      "type": "string"
+    }
+  }
+}

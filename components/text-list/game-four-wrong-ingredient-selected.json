@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_list_game_four_wrong_ingredient_selecteds",
+  "info": {
+    "name": "GameFourWrongIngredientSelected",
+    "icon": "ban"
+  },
+  "options": {},
+  "attributes": {
+    "rightIngredient": {
+      "type": "string"
+    },
+    "userSelected": {
+      "type": "string"
+    }
+  }
+}

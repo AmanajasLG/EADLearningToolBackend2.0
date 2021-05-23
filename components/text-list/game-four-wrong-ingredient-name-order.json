@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_list_game_four_wrong_ingredient_name_orders",
+  "info": {
+    "name": "GameFourWrongIngredientNameOrder",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "writeOrderName": {
+      "type": "string"
+    },
+    "userOrderInput": {
+      "type": "string"
+    }
+  }
+}

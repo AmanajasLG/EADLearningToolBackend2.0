@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_text_list_game_four_wrong_tableware_selecteds",
+  "info": {
+    "name": "GameFourWrongTablewareSelected",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

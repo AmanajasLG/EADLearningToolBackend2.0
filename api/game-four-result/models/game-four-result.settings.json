@@ -27,6 +27,26 @@
     },
     "recipe": {
       "model": "game-four-recipe"
+    },
+    "wrongIngredientSelected": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.game-four-wrong-ingredient-selected"
+    },
+    "wrongIngredientNameOrder": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.game-four-wrong-ingredient-name-order"
+    },
+    "wrongTablewarePairSelected": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.game-four-wrong-tableware-pair-selected"
+    },
+    "wrongTablewareSelected": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.game-four-wrong-tableware-selected"
     }
   }
 }
