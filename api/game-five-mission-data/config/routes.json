@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-five-mission-data",
+      "handler": "game-five-mission-data.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-five-mission-data/count",
+      "handler": "game-five-mission-data.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-five-mission-data/:id",
+      "handler": "game-five-mission-data.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-five-mission-data",
+      "handler": "game-five-mission-data.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-five-mission-data/:id",
+      "handler": "game-five-mission-data.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-five-mission-data/:id",
+      "handler": "game-five-mission-data.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

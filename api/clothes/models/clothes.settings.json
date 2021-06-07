@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clothes",
+  "info": {
+    "name": "Clothes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "asset": {
+      "model": "asset"
+    },
+    "tags": {
+      "collection": "tag"
+    }
+  }
+}

@@ -20,65 +20,6 @@ module.exports = {
           .query("mission")
           .find({ ...ctx.query, draft: false }, p),
       };
-
-    const missions = await strapi.query("mission").find(ctx.query, p);
-    let data = [];
-
-    for (let i = 0; i < missions.length; i++) {
-      switch (missions[i].gameType.game) {
-        case 1:
-          data.push({
-            ...missions[i],
-            missionData: await strapi
-              .query("game-one-mission-data")
-              .findOne({ mission: mission.id }, [
-                {
-                  path: "locations",
-                  populate: [
-                    "location",
-                    {
-                      path: "missionCharacters",
-                      populate: [
-                        { path: "character", populate: ["characterAssets"] },
-                        "answers",
-                      ],
-                    },
-                  ],
-                },
-                "questions",
-              ]),
-          });
-          break;
-        case 2:
-          data.push({
-            ...missions[i],
-            missionData: await strapi
-              .query("game-two-mission-data")
-              .findOne({ mission: mission.id }, [
-                "locations",
-                "questions",
-                {
-                  path: "missionCharacters",
-                  populate: [
-                    { path: "character", populate: ["characterAssets"] },
-                    "answers",
-                  ],
-                },
-                {
-                  path: "tutorial",
-                  populate: [
-                    { path: "character", populate: ["characterAssets"] },
-                    "location",
-                  ],
-                },
-              ]),
-          });
-          break;
-        default:
-      }
-    }
-
-    return { missions: data };
   },
 
   getMission: async (ctx, next) => {
@@ -182,6 +123,21 @@ module.exports = {
             },
           ],
         };
+      case 5:
+        return {
+          missions: [
+            {
+              ...mission,
+              missionData: await strapi
+                .query("game-five-mission-data")
+                .findOne({ mission: mission.id }, [
+                  "rightTags",
+                  { path: "character", populate: ["characterAssets"] },
+                  { path: "clothes", populate: "asset" },
+                ]),
+            },
+          ],
+        };
       default:
     }
   },
@@ -208,6 +164,10 @@ module.exports = {
       case 4:
         return {
           results: await strapi.query("game-four-result").find(ctx.query, []),
+        };
+      case 5:
+        return {
+          results: await strapi.query("game-five-result").find(ctx.query, []),
         };
       default:
     }
@@ -242,6 +202,12 @@ module.exports = {
         return {
           resultsCount: await strapi
             .query("game-four-result")
+            .count(ctx.query, []),
+        };
+      case 5:
+        return {
+          resultsCount: await strapi
+            .query("game-five-result")
             .count(ctx.query, []),
         };
       default:
@@ -289,6 +255,10 @@ module.exports = {
           );
         return {
           results: await strapi.query("game-four-result").create(ctx.query),
+        };
+      case 5:
+        return {
+          results: await strapi.query("game-five-result").create(ctx.query),
         };
       default:
     }
