@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "tags",
   "info": {
-    "name": "Tag"
+    "name": "Tag",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,14 +22,6 @@
         "color",
         "time",
         "weather"
-      ]
-    },
-    "cover": {
-      "type": "enumeration",
-      "enum": [
-        "fullbody",
-        "over",
-        "under"
       ]
     }
   }

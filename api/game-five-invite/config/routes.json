@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-five-invites",
+      "handler": "game-five-invite.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-five-invites/count",
+      "handler": "game-five-invite.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-five-invites/:id",
+      "handler": "game-five-invite.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-five-invites",
+      "handler": "game-five-invite.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-five-invites/:id",
+      "handler": "game-five-invite.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-five-invites/:id",
+      "handler": "game-five-invite.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

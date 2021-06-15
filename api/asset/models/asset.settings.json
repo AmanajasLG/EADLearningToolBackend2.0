@@ -32,7 +32,8 @@
       "enum": [
         "object",
         "style",
-        "food"
+        "food",
+        "clothing"
       ]
     }
   }

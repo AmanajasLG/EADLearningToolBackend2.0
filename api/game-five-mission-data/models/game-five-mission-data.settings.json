@@ -12,29 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "month": {
-      "type": "string"
-    },
-    "season": {
-      "type": "string"
-    },
-    "time": {
-      "type": "string"
-    },
-    "weather": {
-      "type": "string"
-    },
     "characters": {
       "collection": "character"
     },
     "clothes": {
       "collection": "clothes"
     },
-    "rightTags": {
-      "collection": "tag"
-    },
     "mission": {
       "model": "mission"
+    },
+    "invites": {
+      "via": "missionData",
+      "collection": "game-five-invite"
     }
   }
 }

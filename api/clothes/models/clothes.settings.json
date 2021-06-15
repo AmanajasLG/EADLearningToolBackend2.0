@@ -17,6 +17,14 @@
     },
     "tags": {
       "collection": "tag"
+    },
+    "cover": {
+      "type": "enumeration",
+      "enum": [
+        "cima",
+        "baixo",
+        "inteiro"
+      ]
     }
   }
 }

@@ -131,9 +131,9 @@ module.exports = {
               missionData: await strapi
                 .query("game-five-mission-data")
                 .findOne({ mission: mission.id }, [
-                  "rightTags",
-                  { path: "character", populate: ["characterAssets"] },
-                  { path: "clothes", populate: "asset" },
+                  { path: "invites", populate: ["rightTags"] },
+                  { path: "characters", populate: ["characterAssets"] },
+                  { path: "clothes", populate: ["asset", "tags"] },
                 ]),
             },
           ],
