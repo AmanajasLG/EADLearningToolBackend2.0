@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_six_results",
+  "info": {
+    "name": "GameSixResult"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

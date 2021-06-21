@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_six_invites",
+  "info": {
+    "name": "GameSixInvite",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "season": {
+      "type": "string"
+    },
+    "weather": {
+      "type": "string"
+    },
+    "missionData": {
+      "via": "invites",
+      "model": "game-six-mission-data"
+    },
+    "rightTags": {
+      "collection": "tag"
+    }
+  }
+}

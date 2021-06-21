@@ -138,6 +138,21 @@ module.exports = {
             },
           ],
         };
+      case 6:
+        return {
+          missions: [
+            {
+              ...mission,
+              missionData: await strapi
+                .query("game-six-mission-data")
+                .findOne({ mission: mission.id }, [
+                  { path: "invites", populate: ["rightTags"] },
+                  { path: "characters", populate: ["characterAssets"] },
+                  { path: "clothes", populate: ["asset", "tags"] },
+                ]),
+            },
+          ],
+        };
       default:
     }
   },
@@ -168,6 +183,10 @@ module.exports = {
       case 5:
         return {
           results: await strapi.query("game-five-result").find(ctx.query, []),
+        };
+      case 6:
+        return {
+          results: await strapi.query("game-six-result").find(ctx.query, []),
         };
       default:
     }
@@ -208,6 +227,12 @@ module.exports = {
         return {
           resultsCount: await strapi
             .query("game-five-result")
+            .count(ctx.query, []),
+        };
+      case 6:
+        return {
+          resultsCount: await strapi
+            .query("game-six-result")
             .count(ctx.query, []),
         };
       default:
@@ -259,6 +284,10 @@ module.exports = {
       case 5:
         return {
           results: await strapi.query("game-five-result").create(ctx.query),
+        };
+      case 6:
+        return {
+          results: await strapi.query("game-six-result").create(ctx.query),
         };
       default:
     }

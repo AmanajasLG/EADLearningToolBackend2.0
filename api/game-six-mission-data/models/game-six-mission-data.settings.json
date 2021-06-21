@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_six_mission_data",
+  "info": {
+    "name": "GameSixMissionData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "invites": {
+      "via": "missionData",
+      "collection": "game-six-invite"
+    },
+    "clothes": {
+      "collection": "clothes"
+    },
+    "characters": {
+      "collection": "character"
+    }
+  }
+}

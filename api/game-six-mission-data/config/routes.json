@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-six-mission-data",
+      "handler": "game-six-mission-data.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-six-mission-data/count",
+      "handler": "game-six-mission-data.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-six-mission-data/:id",
+      "handler": "game-six-mission-data.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-six-mission-data",
+      "handler": "game-six-mission-data.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-six-mission-data/:id",
+      "handler": "game-six-mission-data.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-six-mission-data/:id",
+      "handler": "game-six-mission-data.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
