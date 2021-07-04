@@ -286,6 +286,8 @@ module.exports = {
           results: await strapi.query("game-five-result").create(ctx.query),
         };
       case 6:
+        if (ctx.query.wrongColors)
+          ctx.query.wrongColors = JSON.parse(ctx.query.wrongColors);
         return {
           results: await strapi.query("game-six-result").create(ctx.query),
         };

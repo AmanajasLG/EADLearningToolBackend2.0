@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_text_list_wrong_colors",
+  "info": {
+    "name": "WrongColor",
+    "icon": "broom"
+  },
+  "options": {},
+  "attributes": {
+    "clothing": {
+      "type": "string"
+    },
+    "rightColor": {
+      "type": "string"
+    },
+    "userColor": {
+      "type": "string"
+    }
+  }
+}
