@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_seven_words",
+  "info": {
+    "name": "GameSevenWord",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phrase": {
+      "via": "words",
+      "model": "game-seven-phrase"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "text": {
+      "type": "string"
+    },
+    "correct": {
+      "type": "boolean"
+    },
+    "preset": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "city",
+        "month",
+        "day",
+        "period",
+        "peopleCount"
+      ]
+    },
+    "punctuation": {
+      "type": "string"
+    }
+  }
+}

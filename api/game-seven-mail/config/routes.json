@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-seven-mails",
+      "handler": "game-seven-mail.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-seven-mails/count",
+      "handler": "game-seven-mail.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-seven-mails/:id",
+      "handler": "game-seven-mail.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-seven-mails",
+      "handler": "game-seven-mail.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-seven-mails/:id",
+      "handler": "game-seven-mail.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-seven-mails/:id",
+      "handler": "game-seven-mail.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

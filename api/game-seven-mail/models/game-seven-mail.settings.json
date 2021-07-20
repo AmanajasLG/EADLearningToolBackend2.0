@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_seven_mails",
+  "info": {
+    "name": "GameSevenMail",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "mail",
+      "model": "game-seven-mission-data"
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "titleTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.translation"
+    },
+    "date": {
+      "type": "date"
+    },
+    "senderName": {
+      "type": "string"
+    },
+    "senderEmail": {
+      "type": "string"
+    }
+  }
+}

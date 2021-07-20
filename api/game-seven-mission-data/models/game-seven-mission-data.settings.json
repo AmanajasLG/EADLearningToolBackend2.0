@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_seven_mission_data",
+  "info": {
+    "name": "GameSevenMissionData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "mail": {
+      "via": "missionData",
+      "model": "game-seven-mail"
+    },
+    "flights": {
+      "via": "missionData",
+      "collection": "game-seven-flight"
+    },
+    "cities": {
+      "via": "missionData",
+      "collection": "game-seven-city"
+    },
+    "phrases": {
+      "via": "missionData",
+      "collection": "game-seven-phrase"
+    },
+    "days": {
+      "type": "integer"
+    },
+    "peopleCount": {
+      "type": "integer"
+    },
+    "month": {
+      "type": "integer"
+    }
+  }
+}

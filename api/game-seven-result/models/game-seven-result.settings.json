@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_seven_results",
+  "info": {
+    "name": "GameSevenResult"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

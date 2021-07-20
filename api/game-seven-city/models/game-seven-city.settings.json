@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_seven_cities",
+  "info": {
+    "name": "GameSevenCity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "cities",
+      "model": "game-seven-mission-data"
+    },
+    "name": {
+      "type": "string"
+    },
+    "correct": {
+      "type": "boolean"
+    }
+  }
+}
