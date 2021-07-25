@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_eight_flights",
+  "info": {
+    "name": "GameEightFlight"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "flights",
+      "model": "game-eight-mission-data"
+    },
+    "departure": {
+      "type": "time"
+    },
+    "arrival": {
+      "type": "time"
+    },
+    "period": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "going",
+        "return"
+      ]
+    },
+    "correct": {
+      "type": "boolean"
+    }
+  }
+}

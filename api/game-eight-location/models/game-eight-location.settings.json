@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_eight_locations",
+  "info": {
+    "name": "GameEightLocation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "locations",
+      "model": "game-eight-mission-data"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "school",
+        "hotel",
+        "hospital",
+        "drugstore",
+        "supermarket",
+        "park",
+        "bridge",
+        "restaurant",
+        "cityhall"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "positionX": {
+      "type": "integer"
+    },
+    "positionY": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_eight_cities",
+  "info": {
+    "name": "GameEightCity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "cities",
+      "model": "game-eight-mission-data"
+    },
+    "name": {
+      "type": "string"
+    },
+    "correct": {
+      "type": "boolean"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

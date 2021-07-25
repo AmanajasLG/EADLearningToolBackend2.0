@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-eight-flights",
+      "handler": "game-eight-flight.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-eight-flights/count",
+      "handler": "game-eight-flight.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-eight-flights/:id",
+      "handler": "game-eight-flight.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-eight-flights",
+      "handler": "game-eight-flight.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-eight-flights/:id",
+      "handler": "game-eight-flight.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-eight-flights/:id",
+      "handler": "game-eight-flight.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

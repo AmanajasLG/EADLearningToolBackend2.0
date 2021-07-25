@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-eight-mission-data",
+      "handler": "game-eight-mission-data.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-eight-mission-data/count",
+      "handler": "game-eight-mission-data.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-eight-mission-data/:id",
+      "handler": "game-eight-mission-data.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-eight-mission-data",
+      "handler": "game-eight-mission-data.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-eight-mission-data/:id",
+      "handler": "game-eight-mission-data.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-eight-mission-data/:id",
+      "handler": "game-eight-mission-data.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
