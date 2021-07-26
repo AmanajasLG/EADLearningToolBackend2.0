@@ -164,7 +164,7 @@ module.exports = {
                   "mail",
                   "cities",
                   "flights",
-                  { path: "phases", populate: ["words"] },
+                  { path: "phrases", populate: ["words"] },
                 ]),
             },
           ],
