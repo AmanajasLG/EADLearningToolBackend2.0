@@ -25,6 +25,9 @@
     },
     "size": {
       "type": "integer"
+    },
+    "maxWordsCount": {
+      "type": "integer"
     }
   }
 }
