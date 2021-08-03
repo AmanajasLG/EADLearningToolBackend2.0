@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "assets",
+  "collectionName": "clothes",
   "info": {
-    "name": "Asset",
+    "name": "Clothes",
     "description": ""
   },
   "options": {
@@ -12,10 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "asset": {
+      "model": "asset"
     },
-    "image": {
+    "tags": {
+      "collection": "tag"
+    },
+    "cover": {
+      "type": "enumeration",
+      "enum": [
+        "cima",
+        "baixo",
+        "inteiro"
+      ]
+    },
+    "wardrobeAsset": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -26,15 +37,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "object",
-        "style",
-        "food",
-        "clothing"
-      ]
     }
   }
 }

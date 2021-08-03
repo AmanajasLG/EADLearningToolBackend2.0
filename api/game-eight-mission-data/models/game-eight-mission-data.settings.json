@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_eight_mission_data",
+  "info": {
+    "name": "GameEightMissionData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "emails": {
+      "via": "missionData",
+      "collection": "game-eight-email"
+    },
+    "cities": {
+      "via": "missionData",
+      "collection": "game-eight-city"
+    },
+    "flights": {
+      "via": "missionData",
+      "collection": "game-eight-flight"
+    },
+    "locations": {
+      "via": "missionData",
+      "collection": "game-eight-location"
+    },
+    "responseEmails": {
+      "via": "missionData",
+      "collection": "game-eight-response-email"
+    },
+    "days": {
+      "type": "integer"
+    },
+    "peopleCount": {
+      "type": "integer"
+    },
+    "month": {
+      "type": "integer"
+    }
+  }
+}

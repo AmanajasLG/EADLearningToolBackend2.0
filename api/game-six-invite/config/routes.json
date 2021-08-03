@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-six-invites",
+      "handler": "game-six-invite.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-six-invites/count",
+      "handler": "game-six-invite.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-six-invites/:id",
+      "handler": "game-six-invite.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-six-invites",
+      "handler": "game-six-invite.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-six-invites/:id",
+      "handler": "game-six-invite.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-six-invites/:id",
+      "handler": "game-six-invite.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

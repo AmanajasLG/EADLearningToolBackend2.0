@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_eight_response_emails",
+  "info": {
+    "name": "GameEightResponseEmail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "responseEmails",
+      "model": "game-eight-mission-data"
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "partials": {
+      "via": "responseEmail",
+      "collection": "game-eight-response-email-partial"
+    },
+    "clientEmail": {
+      "via": "responseEmail",
+      "model": "game-eight-email"
+    }
+  }
+}

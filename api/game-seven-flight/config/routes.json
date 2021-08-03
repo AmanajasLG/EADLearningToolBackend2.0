@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-seven-flights",
+      "handler": "game-seven-flight.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-seven-flights/count",
+      "handler": "game-seven-flight.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-seven-flights/:id",
+      "handler": "game-seven-flight.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-seven-flights",
+      "handler": "game-seven-flight.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-seven-flights/:id",
+      "handler": "game-seven-flight.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-seven-flights/:id",
+      "handler": "game-seven-flight.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

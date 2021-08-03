@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "assets",
+  "collectionName": "game_seven_cities",
   "info": {
-    "name": "Asset",
+    "name": "GameSevenCity",
     "description": ""
   },
   "options": {
@@ -12,8 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "missionData": {
+      "via": "cities",
+      "model": "game-seven-mission-data"
+    },
     "name": {
       "type": "string"
+    },
+    "correct": {
+      "type": "boolean"
     },
     "image": {
       "model": "file",
@@ -26,15 +33,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "object",
-        "style",
-        "food",
-        "clothing"
-      ]
     }
   }
 }

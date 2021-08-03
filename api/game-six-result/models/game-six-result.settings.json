@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_six_results",
+  "info": {
+    "name": "GameSixResult",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "invite": {
+      "model": "game-six-invite"
+    },
+    "won": {
+      "type": "boolean"
+    },
+    "outfit": {
+      "collection": "clothes"
+    },
+    "wrongClothesCount": {
+      "type": "integer"
+    },
+    "sawInviteAgain": {
+      "type": "boolean"
+    },
+    "character": {
+      "model": "character"
+    },
+    "wrongColors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.wrong-color"
+    },
+    "inBodyNotInPhone": {
+      "collection": "clothes"
+    },
+    "inPhoneNotInBody": {
+      "collection": "clothes"
+    }
+  }
+}

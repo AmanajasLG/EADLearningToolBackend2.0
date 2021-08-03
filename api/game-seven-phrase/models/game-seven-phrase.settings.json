@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_seven_phrases",
+  "info": {
+    "name": "GameSevenPhrase",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "phrases",
+      "model": "game-seven-mission-data"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "words": {
+      "via": "phrase",
+      "collection": "game-seven-word"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "maxWordsCount": {
+      "type": "integer"
+    }
+  }
+}

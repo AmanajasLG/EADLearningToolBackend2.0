@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_eight_emails",
+  "info": {
+    "name": "GameEightEmail",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "emails",
+      "model": "game-eight-mission-data"
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "titleTranslate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.translation"
+    },
+    "date": {
+      "type": "date"
+    },
+    "senderName": {
+      "type": "string"
+    },
+    "senderEmail": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "flight",
+        "hotel",
+        "directions"
+      ]
+    },
+    "correctChoice": {
+      "type": "boolean"
+    },
+    "responseEmail": {
+      "model": "game-eight-response-email",
+      "via": "clientEmail"
+    }
+  }
+}

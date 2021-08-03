@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_five_results",
+  "info": {
+    "name": "GameFiveResult",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "invite": {
+      "model": "game-five-invite"
+    },
+    "outfit": {
+      "collection": "clothes"
+    },
+    "wrongClothesCount": {
+      "type": "integer"
+    },
+    "won": {
+      "type": "boolean"
+    },
+    "sawInviteAgain": {
+      "type": "boolean"
+    },
+    "character": {
+      "model": "character"
+    }
+  }
+}

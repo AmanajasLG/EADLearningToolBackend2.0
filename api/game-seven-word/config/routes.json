@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-seven-words",
+      "handler": "game-seven-word.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-seven-words/count",
+      "handler": "game-seven-word.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-seven-words/:id",
+      "handler": "game-seven-word.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-seven-words",
+      "handler": "game-seven-word.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-seven-words/:id",
+      "handler": "game-seven-word.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-seven-words/:id",
+      "handler": "game-seven-word.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

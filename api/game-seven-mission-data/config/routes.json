@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-seven-mission-data",
+      "handler": "game-seven-mission-data.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-seven-mission-data/count",
+      "handler": "game-seven-mission-data.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-seven-mission-data/:id",
+      "handler": "game-seven-mission-data.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-seven-mission-data",
+      "handler": "game-seven-mission-data.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-seven-mission-data/:id",
+      "handler": "game-seven-mission-data.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-seven-mission-data/:id",
+      "handler": "game-seven-mission-data.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

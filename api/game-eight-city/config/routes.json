@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-eight-cities",
+      "handler": "game-eight-city.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-eight-cities/count",
+      "handler": "game-eight-city.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-eight-cities/:id",
+      "handler": "game-eight-city.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-eight-cities",
+      "handler": "game-eight-city.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-eight-cities/:id",
+      "handler": "game-eight-city.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-eight-cities/:id",
+      "handler": "game-eight-city.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

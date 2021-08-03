@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "assets",
+  "collectionName": "game_eight_cities",
   "info": {
-    "name": "Asset",
-    "description": ""
+    "name": "GameEightCity"
   },
   "options": {
     "increments": true,
@@ -12,8 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "missionData": {
+      "via": "cities",
+      "model": "game-eight-mission-data"
+    },
     "name": {
       "type": "string"
+    },
+    "correct": {
+      "type": "boolean"
     },
     "image": {
       "model": "file",
@@ -26,15 +32,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "object",
-        "style",
-        "food",
-        "clothing"
-      ]
     }
   }
 }

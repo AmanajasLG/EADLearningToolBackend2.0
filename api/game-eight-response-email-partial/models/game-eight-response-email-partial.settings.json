@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_eight_response_email_partials",
+  "info": {
+    "name": "GameEightResponseEmailPartial"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "responseEmail": {
+      "model": "game-eight-response-email",
+      "via": "partials"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "text": {
+      "type": "string"
+    },
+    "correct": {
+      "type": "boolean"
+    }
+  }
+}

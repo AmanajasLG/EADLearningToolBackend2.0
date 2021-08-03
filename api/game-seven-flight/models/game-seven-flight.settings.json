@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_seven_flights",
+  "info": {
+    "name": "GameSevenFlight",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "flights",
+      "model": "game-seven-mission-data"
+    },
+    "departure": {
+      "type": "time"
+    },
+    "arrival": {
+      "type": "time"
+    },
+    "period": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "going",
+        "return"
+      ]
+    },
+    "correct": {
+      "type": "boolean"
+    }
+  }
+}

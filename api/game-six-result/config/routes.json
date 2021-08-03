@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-six-results",
+      "handler": "game-six-result.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-six-results/count",
+      "handler": "game-six-result.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-six-results/:id",
+      "handler": "game-six-result.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-six-results",
+      "handler": "game-six-result.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-six-results/:id",
+      "handler": "game-six-result.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-six-results/:id",
+      "handler": "game-six-result.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

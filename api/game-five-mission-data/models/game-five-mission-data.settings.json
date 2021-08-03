@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_five_mission_data",
+  "info": {
+    "name": "GameFiveMissionData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "characters": {
+      "collection": "character"
+    },
+    "clothes": {
+      "collection": "clothes"
+    },
+    "mission": {
+      "model": "mission"
+    },
+    "invites": {
+      "via": "missionData",
+      "collection": "game-five-invite"
+    }
+  }
+}
