@@ -347,12 +347,12 @@ module.exports = {
           results: await strapi.query("game-six-result").create(ctx.query),
         };
       case 7:
+        if (ctx.query.userErrors)
+          ctx.query.userErrors = JSON.parse(ctx.query.userErrors);
         return {
           results: await strapi.query("game-seven-result").create(ctx.query),
         };
       case 8:
-        if (ctx.query.userErrors)
-          ctx.query.userErrors = JSON.parse(ctx.query.userErrors);
         return {
           results: await strapi.query("game-eight-result").create(ctx.query),
         };
