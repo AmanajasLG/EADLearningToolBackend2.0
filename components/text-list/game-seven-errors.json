@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_text_list_game_seven_errors",
+  "info": {
+    "name": "GameSevenErrors",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "userAnswer": {
+      "type": "string"
+    },
+    "correctAnswer": {
+      "type": "string"
+    }
+  }
+}
