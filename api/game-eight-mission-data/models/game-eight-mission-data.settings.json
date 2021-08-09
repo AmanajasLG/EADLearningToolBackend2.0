@@ -31,10 +31,6 @@
       "via": "missionData",
       "collection": "game-eight-location"
     },
-    "responseEmails": {
-      "via": "missionData",
-      "collection": "game-eight-response-email"
-    },
     "days": {
       "type": "integer"
     },

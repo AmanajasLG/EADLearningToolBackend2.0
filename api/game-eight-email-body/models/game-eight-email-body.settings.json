@@ -18,10 +18,6 @@
     "correctChoice": {
       "type": "boolean"
     },
-    "responseEmail": {
-      "via": "email",
-      "model": "game-eight-response-email"
-    },
     "type": {
       "type": "enumeration",
       "enum": [
@@ -37,6 +33,10 @@
     },
     "order": {
       "type": "integer"
+    },
+    "responseEmail": {
+      "via": "emails",
+      "model": "game-eight-response-email"
     }
   }
 }

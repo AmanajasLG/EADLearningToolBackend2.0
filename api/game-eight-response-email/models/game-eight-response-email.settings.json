@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "missionData": {
-      "via": "responseEmails",
-      "model": "game-eight-mission-data"
-    },
     "message": {
       "type": "richtext"
     },
@@ -23,9 +19,9 @@
       "via": "responseEmail",
       "collection": "game-eight-response-email-partial"
     },
-    "email": {
-      "via": "responseEmail",
-      "model": "game-eight-email-body"
+    "emails": {
+      "collection": "game-eight-email-body",
+      "via": "responseEmail"
     },
     "size": {
       "type": "integer"
