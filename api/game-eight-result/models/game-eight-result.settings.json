@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_eight_results",
+  "info": {
+    "name": "GameEightResult"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "mission": {
+      "model": "mission"
+    }
+  }
+}

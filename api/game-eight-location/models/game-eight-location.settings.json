@@ -25,9 +25,10 @@
         "drugstore",
         "supermarket",
         "park",
-        "bridge",
         "restaurant",
-        "cityhall"
+        "cityhall",
+        "touristic",
+        "shopping"
       ]
     },
     "description": {
@@ -53,6 +54,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "correct": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

@@ -15,9 +15,9 @@
     "mission": {
       "model": "mission"
     },
-    "emails": {
-      "via": "missionData",
-      "collection": "game-eight-email"
+    "email": {
+      "model": "game-eight-email",
+      "via": "missionData"
     },
     "cities": {
       "via": "missionData",

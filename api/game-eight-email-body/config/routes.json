@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-eight-email-bodies",
+      "handler": "game-eight-email-body.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-eight-email-bodies/count",
+      "handler": "game-eight-email-body.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-eight-email-bodies/:id",
+      "handler": "game-eight-email-body.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-eight-email-bodies",
+      "handler": "game-eight-email-body.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-eight-email-bodies/:id",
+      "handler": "game-eight-email-body.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-eight-email-bodies/:id",
+      "handler": "game-eight-email-body.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

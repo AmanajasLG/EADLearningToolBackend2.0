@@ -12,13 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "missionData": {
-      "via": "emails",
-      "model": "game-eight-mission-data"
-    },
-    "message": {
-      "type": "richtext"
-    },
     "title": {
       "type": "string"
     },
@@ -36,23 +29,13 @@
     "senderEmail": {
       "type": "string"
     },
-    "order": {
-      "type": "integer"
+    "messages": {
+      "via": "email",
+      "collection": "game-eight-email-body"
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "flight",
-        "hotel",
-        "directions"
-      ]
-    },
-    "correctChoice": {
-      "type": "boolean"
-    },
-    "responseEmail": {
-      "model": "game-eight-response-email",
-      "via": "clientEmail"
+    "missionData": {
+      "via": "email",
+      "model": "game-eight-mission-data"
     }
   }
 }

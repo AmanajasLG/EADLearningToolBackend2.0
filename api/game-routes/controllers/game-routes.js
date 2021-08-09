@@ -181,7 +181,10 @@ module.exports = {
                   "flights",
                   {
                     path: "email",
-                    populate: { path: "emailResponse", populate: "partials" },
+                    populate: {
+                      path: "messages",
+                      populate: { path: "responseEmail", populate: "partials" },
+                    },
                   },
                   "locations",
                 ]),

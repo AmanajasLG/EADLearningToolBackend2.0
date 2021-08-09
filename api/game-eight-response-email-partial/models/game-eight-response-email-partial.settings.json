@@ -12,8 +12,8 @@
   "pluginOptions": {},
   "attributes": {
     "responseEmail": {
-      "model": "game-eight-response-email",
-      "via": "partials"
+      "via": "partials",
+      "model": "game-eight-response-email"
     },
     "order": {
       "type": "integer"

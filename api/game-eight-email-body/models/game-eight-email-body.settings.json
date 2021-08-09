@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_eight_email_bodies",
+  "info": {
+    "name": "GameEightEmailBody",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "richtext"
+    },
+    "correctChoice": {
+      "type": "boolean"
+    },
+    "responseEmail": {
+      "via": "email",
+      "model": "game-eight-response-email"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "init",
+        "flight",
+        "hotel",
+        "directions"
+      ]
+    },
+    "email": {
+      "via": "messages",
+      "model": "game-eight-email"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
