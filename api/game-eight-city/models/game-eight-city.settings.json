@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "game_eight_cities",
   "info": {
-    "name": "GameEightCity"
+    "name": "GameEightCity",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -22,6 +23,18 @@
       "type": "boolean"
     },
     "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "map": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
