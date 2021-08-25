@@ -37,9 +37,6 @@
         "period",
         "peopleCount"
       ]
-    },
-    "punctuation": {
-      "type": "string"
     }
   }
 }
