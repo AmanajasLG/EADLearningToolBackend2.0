@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_nine_mission_data",
+  "info": {
+    "name": "GameNineMissionData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "model": "mission"
+    },
+    "requests": {
+      "via": "missionData",
+      "collection": "game-nine-request"
+    },
+    "locations": {
+      "via": "missionData",
+      "collection": "game-nine-location"
+    },
+    "homes": {
+      "via": "missionData",
+      "collection": "game-nine-home"
+    },
+    "seconds": {
+      "type": "integer"
+    }
+  }
+}

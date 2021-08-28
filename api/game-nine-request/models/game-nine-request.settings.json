@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_nine_requests",
+  "info": {
+    "name": "GameNineRequest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dialog": {
+      "type": "richtext"
+    },
+    "rooms": {
+      "type": "integer"
+    },
+    "baths": {
+      "type": "integer"
+    },
+    "closeTo": {
+      "type": "enumeration",
+      "enum": [
+        "Banco",
+        "Escola",
+        "Farmacia",
+        "Supermercado",
+        "Hospital",
+        "Parque",
+        "Restaurante",
+        "Shopping"
+      ]
+    },
+    "farFrom": {
+      "type": "enumeration",
+      "enum": [
+        "Banco",
+        "Escola",
+        "Farmacia",
+        "Supermercado",
+        "Hospital",
+        "Parque",
+        "Restaurante",
+        "Shopping"
+      ]
+    },
+    "difficulty": {
+      "type": "integer"
+    },
+    "errorDialogs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.game-eight-wrong-dialog"
+    },
+    "missionData": {
+      "via": "requests",
+      "model": "game-nine-mission-data"
+    }
+  }
+}

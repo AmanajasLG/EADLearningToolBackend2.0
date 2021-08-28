@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-nine-results",
+      "handler": "game-nine-result.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-nine-results/count",
+      "handler": "game-nine-result.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-nine-results/:id",
+      "handler": "game-nine-result.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-nine-results",
+      "handler": "game-nine-result.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-nine-results/:id",
+      "handler": "game-nine-result.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-nine-results/:id",
+      "handler": "game-nine-result.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -191,6 +191,22 @@ module.exports = {
             },
           ],
         };
+      case 9:
+        return {
+          missions: [
+            {
+              ...mission,
+              missionData: await strapi
+                .query("game-nine-mission-data")
+                .findOne({ mission: mission.id }, [
+                  "homes",
+                  "requests",
+                  { path: "characters", populate: ["characterAssets"] },
+                  "locations",
+                ]),
+            },
+          ],
+        };
       default:
     }
   },
@@ -233,6 +249,10 @@ module.exports = {
       case 8:
         return {
           results: await strapi.query("game-eight-result").find(ctx.query, []),
+        };
+      case 9:
+        return {
+          results: await strapi.query("game-nine-result").find(ctx.query, []),
         };
       default:
     }
@@ -291,6 +311,12 @@ module.exports = {
         return {
           resultsCount: await strapi
             .query("game-eight-result")
+            .count(ctx.query, []),
+        };
+      case 9:
+        return {
+          resultsCount: await strapi
+            .query("game-nine-result")
             .count(ctx.query, []),
         };
       default:
@@ -360,6 +386,10 @@ module.exports = {
           ctx.query.userErrors = JSON.parse(ctx.query.userErrors);
         return {
           results: await strapi.query("game-eight-result").create(ctx.query),
+        };
+      case 9:
+        return {
+          results: await strapi.query("game-nine-result").create(ctx.query),
         };
       default:
     }

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_nine_locations",
+  "info": {
+    "name": "GameNineLocation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "locations",
+      "model": "game-nine-mission-data"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Banco",
+        "Escola",
+        "Farmacia",
+        "Supermercado",
+        "Hospital",
+        "Parque",
+        "Restaurante",
+        "Shopping"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

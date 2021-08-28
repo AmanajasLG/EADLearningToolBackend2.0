@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_text_list_game_eight_wrong_dialogs",
+  "info": {
+    "name": "GameEightWrongDialog",
+    "icon": "dragon"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "rooms",
+        "baths",
+        "closeTo",
+        "farFrom"
+      ]
+    },
+    "dialog": {
+      "type": "string"
+    }
+  }
+}

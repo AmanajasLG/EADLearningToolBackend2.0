@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_nine_homes",
+  "info": {
+    "name": "GameNineHome"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "missionData": {
+      "via": "homes",
+      "model": "game-nine-mission-data"
+    },
+    "name": {
+      "type": "string"
+    },
+    "rooms": {
+      "type": "integer"
+    },
+    "baths": {
+      "type": "integer"
+    },
+    "closeTo": {
+      "type": "enumeration",
+      "enum": [
+        "Banco",
+        "Escola",
+        "Farmacia",
+        "Supermercado",
+        "Hospital",
+        "Parque",
+        "Restaurante",
+        "Shopping"
+      ]
+    },
+    "farFrom": {
+      "type": "enumeration",
+      "enum": [
+        "Banco",
+        "Escola",
+        "Farmacia",
+        "Supermercado",
+        "Hospital",
+        "Parque",
+        "Restaurante",
+        "Shopping"
+      ]
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
