@@ -1,8 +1,9 @@
 {
-  "collectionName": "components_text_list_game_eight_wrong_dialogs",
+  "collectionName": "components_text_list_game_nine_error_dialogs",
   "info": {
-    "name": "GameEightWrongDialog",
-    "icon": "dragon"
+    "name": "GameNineErrorDialog",
+    "icon": "comment-slash",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,7 +17,7 @@
       ]
     },
     "dialog": {
-      "type": "string"
+      "type": "richtext"
     }
   }
 }

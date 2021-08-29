@@ -50,14 +50,14 @@
     "difficulty": {
       "type": "integer"
     },
-    "errorDialogs": {
-      "type": "component",
-      "repeatable": true,
-      "component": "text-list.game-eight-wrong-dialog"
-    },
     "missionData": {
       "via": "requests",
       "model": "game-nine-mission-data"
+    },
+    "errorDialog": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.game-nine-error-dialog"
     }
   }
 }
