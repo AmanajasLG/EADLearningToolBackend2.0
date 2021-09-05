@@ -25,32 +25,6 @@
     "baths": {
       "type": "integer"
     },
-    "closeTo": {
-      "type": "enumeration",
-      "enum": [
-        "Banco",
-        "Escola",
-        "Farmacia",
-        "Supermercado",
-        "Hospital",
-        "Parque",
-        "Restaurante",
-        "Shopping"
-      ]
-    },
-    "farFrom": {
-      "type": "enumeration",
-      "enum": [
-        "Banco",
-        "Escola",
-        "Farmacia",
-        "Supermercado",
-        "Hospital",
-        "Parque",
-        "Restaurante",
-        "Shopping"
-      ]
-    },
     "icon": {
       "model": "file",
       "via": "related",
@@ -68,6 +42,9 @@
     },
     "positionY": {
       "type": "integer"
+    },
+    "closeTo": {
+      "type": "string"
     }
   }
 }

@@ -16,19 +16,6 @@
       "via": "locations",
       "model": "game-nine-mission-data"
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "Banco",
-        "Escola",
-        "Farmacia",
-        "Supermercado",
-        "Hospital",
-        "Parque",
-        "Restaurante",
-        "Shopping"
-      ]
-    },
     "description": {
       "type": "string"
     },
@@ -49,6 +36,9 @@
     },
     "positionY": {
       "type": "integer"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }
