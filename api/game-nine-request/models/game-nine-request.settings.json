@@ -21,32 +21,6 @@
     "baths": {
       "type": "integer"
     },
-    "closeTo": {
-      "type": "enumeration",
-      "enum": [
-        "Banco",
-        "Escola",
-        "Farmacia",
-        "Supermercado",
-        "Hospital",
-        "Parque",
-        "Restaurante",
-        "Shopping"
-      ]
-    },
-    "farFrom": {
-      "type": "enumeration",
-      "enum": [
-        "Banco",
-        "Escola",
-        "Farmacia",
-        "Supermercado",
-        "Hospital",
-        "Parque",
-        "Restaurante",
-        "Shopping"
-      ]
-    },
     "difficulty": {
       "type": "integer"
     },
@@ -58,6 +32,12 @@
       "type": "component",
       "repeatable": true,
       "component": "text-list.game-nine-error-dialog"
+    },
+    "closeTo": {
+      "type": "string"
+    },
+    "farFrom": {
+      "type": "string"
     }
   }
 }
