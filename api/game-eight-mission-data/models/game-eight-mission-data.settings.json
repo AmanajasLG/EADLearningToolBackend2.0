@@ -39,6 +39,15 @@
     },
     "month": {
       "type": "integer"
+    },
+    "personPositionX": {
+      "type": "integer"
+    },
+    "personPositionY": {
+      "type": "integer"
+    },
+    "direction": {
+      "type": "integer"
     }
   }
 }
