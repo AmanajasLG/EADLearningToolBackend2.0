@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_text_list_game_one_wrong_dialogs",
+  "info": {
+    "name": "GameOneWrongDialog",
+    "icon": "angle-double-left"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "userAnswer": {
+      "type": "string"
+    },
+    "times": {
+      "type": "integer"
+    }
+  }
+}

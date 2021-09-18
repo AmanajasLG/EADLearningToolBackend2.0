@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_text_list_game_one_error_phones",
+  "info": {
+    "name": "GameOneErrorPhone",
+    "icon": "angle-double-right"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "userAnswer": {
+      "type": "string"
+    },
+    "correctAnswer": {
+      "type": "string"
+    }
+  }
+}
