@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_text_list_text_fields",
+  "info": {
+    "name": "TextField",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

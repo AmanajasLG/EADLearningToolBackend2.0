@@ -25,14 +25,21 @@
     "score": {
       "type": "integer"
     },
-    "validQuestionsCount": {
+    "seconds": {
       "type": "integer"
     },
-    "spokenCharactersCount": {
-      "type": "integer"
+    "wrongDialogs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.game-two-wrong-dialog"
     },
-    "tipsCount": {
-      "type": "integer"
+    "tips": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.text-field"
+    },
+    "characters": {
+      "collection": "character"
     }
   }
 }

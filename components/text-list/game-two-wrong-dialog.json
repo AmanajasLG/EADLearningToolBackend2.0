@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_list_game_two_wrong_dialogs",
+  "info": {
+    "name": "GameTwoWrongDialog",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "userAnswer": {
+      "type": "string"
+    },
+    "correctAnswer": {
+      "type": "string"
+    }
+  }
+}

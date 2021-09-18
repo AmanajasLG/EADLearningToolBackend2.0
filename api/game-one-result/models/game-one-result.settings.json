@@ -30,7 +30,7 @@
       "repeatable": true,
       "component": "text-list.game-one-error-phone"
     },
-    "wrongDialog": {
+    "wrongDialogs": {
       "type": "component",
       "repeatable": true,
       "component": "text-list.game-one-wrong-dialog"

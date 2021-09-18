@@ -332,10 +332,17 @@ module.exports = {
 
     switch (mission.gameType.game) {
       case 1:
+        if (ctx.query.phoneErrors)
+          ctx.query.phoneErrors = JSON.parse(ctx.query.phoneErrors);
+        if (ctx.query.wrongDialogs)
+          ctx.query.wrongDialogs = JSON.parse(ctx.query.wrongDialogs);
         return {
           results: await strapi.query("game-one-result").create(ctx.query),
         };
       case 2:
+        if (ctx.query.tips) ctx.query.tips = JSON.parse(ctx.query.tips);
+        if (ctx.query.wrongDialogs)
+          ctx.query.wrongDialogs = JSON.parse(ctx.query.wrongDialogs);
         return {
           results: await strapi.query("game-two-result").create(ctx.query),
         };
