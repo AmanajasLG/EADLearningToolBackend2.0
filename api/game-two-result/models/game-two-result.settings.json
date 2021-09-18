@@ -22,9 +22,6 @@
     "won": {
       "type": "boolean"
     },
-    "score": {
-      "type": "integer"
-    },
     "seconds": {
       "type": "integer"
     },
