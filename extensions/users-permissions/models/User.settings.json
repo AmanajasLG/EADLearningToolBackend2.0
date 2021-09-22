@@ -75,6 +75,10 @@
     },
     "defaultColor": {
       "type": "string"
+    },
+    "course": {
+      "model": "course",
+      "via": "users"
     }
   }
 }

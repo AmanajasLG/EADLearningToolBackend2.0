@@ -63,6 +63,10 @@
     "trackPlayerInput": {
       "type": "boolean",
       "default": false
+    },
+    "course": {
+      "model": "course",
+      "via": "missions"
     }
   }
 }

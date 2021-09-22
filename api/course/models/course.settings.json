@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "users": {
+      "via": "course",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "missions": {
+      "via": "course",
+      "collection": "mission"
+    }
+  }
+}
