@@ -11,7 +11,6 @@ module.exports = {
 
   getMissions: async (ctx, next) => {
     let p = ["gameType"];
-    console.log(ctx.state.user);
     if (ctx.state.user.role.name === "Professor")
       return {
         missions: await strapi.query("mission").find(ctx.query, p),
