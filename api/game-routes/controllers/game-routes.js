@@ -383,12 +383,20 @@ module.exports = {
           results: await strapi.query("game-four-result").create(ctx.query),
         };
       case 5:
+        if (ctx.query.inviteQuestionsMade)
+          ctx.query.inviteQuestionsMade = JSON.parse(
+            ctx.query.inviteQuestionsMade
+          );
         return {
           results: await strapi.query("game-five-result").create(ctx.query),
         };
       case 6:
         if (ctx.query.wrongColors)
           ctx.query.wrongColors = JSON.parse(ctx.query.wrongColors);
+        if (ctx.query.inviteQuestionsMade)
+          ctx.query.inviteQuestionsMade = JSON.parse(
+            ctx.query.inviteQuestionsMade
+          );
         return {
           results: await strapi.query("game-six-result").create(ctx.query),
         };

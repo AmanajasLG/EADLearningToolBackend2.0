@@ -36,6 +36,14 @@
     },
     "character": {
       "model": "character"
+    },
+    "seconds": {
+      "type": "integer"
+    },
+    "inviteQuestionsMade": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.text-field"
     }
   }
 }
