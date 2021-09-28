@@ -19,8 +19,8 @@
       "collection": "question"
     },
     "locations": {
-      "collection": "game-one-location",
-      "via": "missionData"
+      "via": "missionData",
+      "collection": "game-one-location"
     },
     "nextRoomTextRight": {
       "type": "string",
