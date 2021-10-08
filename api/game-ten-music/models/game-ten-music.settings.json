@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_ten_musics",
+  "info": {
+    "name": "GameTenMusic",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "artist": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "missionData": {
+      "via": "musics",
+      "model": "game-ten-mission-data"
+    },
+    "audio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

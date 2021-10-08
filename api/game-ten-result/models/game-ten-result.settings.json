@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_ten_results",
+  "info": {
+    "name": "GameTenResult",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "mission": {
+      "model": "mission"
+    },
+    "invite": {
+      "model": "game-ten-invite"
+    },
+    "outfit": {
+      "collection": "clothes"
+    },
+    "character": {
+      "model": "character"
+    },
+    "wrongClothesCount": {
+      "type": "integer"
+    },
+    "seconds": {
+      "type": "integer"
+    },
+    "inviteQuestionsMade": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.text-field"
+    },
+    "dish": {
+      "model": "game-ten-dish"
+    },
+    "music": {
+      "model": "game-ten-music"
+    },
+    "wrongGenreNameOrder": {
+      "type": "string"
+    },
+    "won": {
+      "type": "boolean"
+    }
+  }
+}

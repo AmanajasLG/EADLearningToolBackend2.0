@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-ten-musics",
+      "handler": "game-ten-music.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-ten-musics/count",
+      "handler": "game-ten-music.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-ten-musics/:id",
+      "handler": "game-ten-music.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-ten-musics",
+      "handler": "game-ten-music.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-ten-musics/:id",
+      "handler": "game-ten-music.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-ten-musics/:id",
+      "handler": "game-ten-music.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

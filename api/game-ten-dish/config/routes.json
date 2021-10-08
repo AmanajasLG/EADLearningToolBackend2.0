@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-ten-dishes",
+      "handler": "game-ten-dish.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-ten-dishes/count",
+      "handler": "game-ten-dish.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-ten-dishes/:id",
+      "handler": "game-ten-dish.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-ten-dishes",
+      "handler": "game-ten-dish.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-ten-dishes/:id",
+      "handler": "game-ten-dish.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-ten-dishes/:id",
+      "handler": "game-ten-dish.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

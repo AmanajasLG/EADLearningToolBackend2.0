@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_ten_mission_data",
+  "info": {
+    "name": "GameTenMissionData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "character": {
+      "model": "character"
+    },
+    "dressingCharacters": {
+      "collection": "character"
+    },
+    "clothes": {
+      "collection": "clothes"
+    },
+    "invite": {
+      "via": "missionData",
+      "model": "game-ten-invite"
+    },
+    "dishes": {
+      "via": "missionData",
+      "collection": "game-ten-dish"
+    },
+    "musics": {
+      "via": "missionData",
+      "collection": "game-ten-music"
+    },
+    "mission": {
+      "model": "mission"
+    }
+  }
+}

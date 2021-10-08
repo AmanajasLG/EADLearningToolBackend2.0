@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_ten_dishes",
+  "info": {
+    "name": "GameTenDish",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-list.ingredient-list"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "correct": {
+      "type": "boolean"
+    },
+    "missionData": {
+      "via": "dishes",
+      "model": "game-ten-mission-data"
+    }
+  }
+}

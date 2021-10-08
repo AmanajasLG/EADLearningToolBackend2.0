@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_text_list_ingredient_lists",
+  "info": {
+    "name": "IngredientList",
+    "icon": "candy-cane"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

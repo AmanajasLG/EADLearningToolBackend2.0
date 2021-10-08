@@ -217,6 +217,25 @@ module.exports = {
             },
           ],
         };
+      case 10:
+        return {
+          missions: [
+            {
+              ...mission,
+              missionData: await strapi
+                .query("game-ten-mission-data")
+                .findOne({ mission: mission.id }, [
+                  { path: "character", populate: ["characterAssets"] },
+                  "dishes",
+                  "invite",
+                  { path: "invite", populate: ["rightTags"] },
+                  { path: "clothes", populate: ["asset", "tags"] },
+                  { path: "dressingCharacters", populate: ["characterAssets"] },
+                  "music",
+                ]),
+            },
+          ],
+        };
       default:
     }
   },
@@ -263,6 +282,10 @@ module.exports = {
       case 9:
         return {
           results: await strapi.query("game-nine-result").find(ctx.query, []),
+        };
+      case 10:
+        return {
+          results: await strapi.query("game-ten-result").find(ctx.query, []),
         };
       default:
     }
@@ -327,6 +350,12 @@ module.exports = {
         return {
           resultsCount: await strapi
             .query("game-nine-result")
+            .count(ctx.query, []),
+        };
+      case 10:
+        return {
+          resultsCount: await strapi
+            .query("game-ten-result")
             .count(ctx.query, []),
         };
       default:
@@ -415,6 +444,19 @@ module.exports = {
       case 9:
         return {
           results: await strapi.query("game-nine-result").create(ctx.query),
+        };
+      case 10:
+        if (ctx.query.inviteQuestionsMade)
+          ctx.query.inviteQuestionsMade = JSON.parse(
+            ctx.query.inviteQuestionsMade
+          );
+
+        if (ctx.query.wrongGenreNameOrder)
+          ctx.query.wrongGenreNameOrder = JSON.parse(
+            ctx.query.wrongGenreNameOrder
+          );
+        return {
+          results: await strapi.query("game-ten-result").create(ctx.query),
         };
       default:
     }
