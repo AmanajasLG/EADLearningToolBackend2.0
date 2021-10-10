@@ -26,6 +26,9 @@
       "type": "component",
       "repeatable": true,
       "component": "text-list.game-eight-error"
+    },
+    "seconds": {
+      "type": "integer"
     }
   }
 }

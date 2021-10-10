@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_list_game_nine_wrong_home_choices",
+  "info": {
+    "name": "GameNineWrongHomeChoice",
+    "icon": "warehouse"
+  },
+  "options": {},
+  "attributes": {
+    "userAnswer": {
+      "type": "string"
+    },
+    "correctAnswer": {
+      "type": "string"
+    }
+  }
+}

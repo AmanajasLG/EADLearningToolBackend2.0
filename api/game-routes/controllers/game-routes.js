@@ -442,6 +442,8 @@ module.exports = {
           results: await strapi.query("game-eight-result").create(ctx.query),
         };
       case 9:
+        if (ctx.query.userErrors)
+          ctx.query.userErrors = JSON.parse(ctx.query.userErrors);
         return {
           results: await strapi.query("game-nine-result").create(ctx.query),
         };

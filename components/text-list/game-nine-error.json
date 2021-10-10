@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_text_list_game_nine_errors",
+  "info": {
+    "name": "GameNineError",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "request": {
+      "model": "game-nine-request"
+    },
+    "userAnswer": {
+      "type": "string"
+    },
+    "correctAnswer": {
+      "type": "string"
+    }
+  }
+}
