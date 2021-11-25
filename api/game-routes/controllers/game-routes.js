@@ -227,11 +227,10 @@ module.exports = {
                 .findOne({ mission: mission.id }, [
                   { path: "character", populate: ["characterAssets"] },
                   "dishes",
-                  "invite",
                   { path: "invite", populate: ["rightTags"] },
                   { path: "clothes", populate: ["asset", "tags"] },
                   { path: "dressingCharacters", populate: ["characterAssets"] },
-                  "music",
+                  "musics",
                 ]),
             },
           ],
