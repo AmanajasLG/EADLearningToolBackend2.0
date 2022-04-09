@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_two_numbers_audio_sample_times",
+  "info": {
+    "name": "audioSampleTime",
+    "icon": "compact-disc"
+  },
+  "options": {},
+  "attributes": {
+    "start": {
+      "type": "integer"
+    },
+    "end": {
+      "type": "integer"
+    }
+  }
+}

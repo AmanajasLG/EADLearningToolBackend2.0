@@ -51,6 +51,11 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "audioSampleTime": {
+      "type": "component",
+      "repeatable": false,
+      "component": "two-numbers.audio-sample-time"
     }
   }
 }
