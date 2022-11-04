@@ -5,7 +5,7 @@
   "description": "A Strapi application",
   "engines": {
     "node": "14.2.0"
-  }
+  },
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi --openssl-legacy-provider start",
