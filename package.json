@@ -8,7 +8,7 @@
   },
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi --openssl-legacy-provider start",
+    "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
